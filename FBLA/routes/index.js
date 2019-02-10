@@ -26,4 +26,12 @@ router.post('/login', (req, res, next) => {
   });
 });
 
+router.get('/privacy', (req, res, next) => {
+  res.render('privacy');
+});
+
+router.get('/faq', (req, res, next) => {
+  res.render('faq');
+})
+
 module.exports = router;

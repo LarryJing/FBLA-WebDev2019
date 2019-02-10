@@ -56,9 +56,9 @@ p {
 }
 
 #navbar-custom{
-  background-image: linear-gradient(#dbddff, #c1c4ff, lightgray);
+  background-image: linear-gradient(#dbddff, #c1c4ff, white);
   display: grid;
-  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-columns: 4fr 4fr 2fr;
 }
 
 #navbar-custom a{
@@ -74,7 +74,8 @@ p {
 }
 
 #navbar-custom a:hover{
-  background-color: #aaa;
+  background-color: #cecece;
+  opacity: 0.7;
   transition: 250ms;
 }
 
