@@ -344,6 +344,21 @@ ul.u-one, ul.u-two {
 .page-s li{list-style:none;display:inline-block; }
 
 .page-s li a{ display:inline-block; padding:0 10px;}
+
+.parallax { 
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*responsive css*/
 
 
