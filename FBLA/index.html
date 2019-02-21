@@ -22,6 +22,7 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<script src='js/jquery.min.js'></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +32,9 @@
     <![endif]-->
 
   </head>
+
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
    <div class="main">
 	<section class="header" id="myheader">
 		<nav class="navbar navbar-static-top my-nav" id="main-menu">
@@ -60,6 +63,7 @@
       </div>
     </nav>
 	</section>
+
 	<section id="banner" class="banner-sec">
 		<div class="container-fluid">
 			<div class="row">
@@ -464,7 +468,7 @@ United States</strong></p>
 			
 			</div>
 				<div class="col-md-2 col-sm-6">
-					<h3>Usefull links</h3>
+					<h3>Site Map</h3>
 					<ul class="u-one">
 						<li><a href="index.html">Home</a></li> 
 						<li><a href="#about">About Us</a></li> 
@@ -539,7 +543,7 @@ United States</strong></p>
 	</div>
 
 </section>
-<div id="fpi_feedback" style="width: 60px;">
+		<div id="fpi_feedback" style="width: 60px;">
 
             <div class="rotate" id="fpi_title" data-toggle="modal" data-target="#myModal">
                 <a  id="request_btn">Request Quote</a>
@@ -556,6 +560,59 @@ United States</strong></p>
 
 
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="Click to return on the top page" style="display: inline;"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+	<div id="splash">
+		<div class="component">
+				<ul class="align">
+					<li>
+						<figure class='book'>
+							<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<h2 class='title'>Welcome to Accuracy</h2>
+								</li>
+								<li></li>
+							</ul>
+
+							<!-- Pages -->
+
+							<ul class='page'>
+								<li>
+									<!-- fifth page -->
+								</li>
+								<li>
+									<a class="btn link-button" href="#">Join Here</a>
+								</li>
+								<li>
+									<!-- third page -->
+								</li>
+								<li>
+									<!-- second page -->
+								</li>
+								<li>
+									<!-- first page -->
+								</li>
+							</ul>
+
+							<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+						</figure>
+					</li>
+				</ul>
+
+				<span class="cover turn"></span>
+			</div>
+	</div> 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -567,7 +624,11 @@ United States</strong></p>
 	</script>
 	
 	<script>
-$(document).ready(function(){
+	$(document).ready(function(){
+		$('.link-button').click(function () {
+        	$('#splash').fadeOut("slow");
+    });	
+
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
