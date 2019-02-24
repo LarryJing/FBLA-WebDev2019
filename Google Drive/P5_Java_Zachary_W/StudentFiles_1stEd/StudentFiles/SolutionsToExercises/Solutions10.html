@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Java Methods Answers/Solutions Chapter 10</title>
+<head>
+
+<body bgcolor="white">
+
+
+<table width="600">
+<tr><td>
+
+<center>
+<p>Solutions to other chapters:
+
+<table border="0" cellpadding="8">
+<tr valign="top" bgcolor="#c6ced6">
+<td> &nbsp;
+<a href="Solutions01.html">1</a>
+<a href="Solutions02.html">2</a>
+<a href="Solutions03.html">3</a>
+<a href="Solutions04.html">4</a>
+<a href="Solutions05.html">5</a>
+<a href="Solutions06.html">6</a>
+<a href="Solutions07.html">7</a>
+<a href="Solutions08.html">8</a>
+<a href="Solutions9.html">9</a>
+10
+<a href="Solutions11.html">11</a>
+<a href="Solutions12.html">12</a>
+<a href="Solutions13.html">13</a>
+<a href="Solutions14.html">14</a>
+<a href="Solutions15.html">15</a>
+<a href="Solutions16.html">16</a>
+<a href="Solutions17.html">17</a>
+<a href="Solutions18.html">18</a>
+<a href="Solutions19.html">19</a>
+<a href="Solutions20.html">20</a>
+<a href="Solutions21.html">21</a>
+<a href="Solutions22.html">22</a>
+<a href="Solutions23.html">23</a>
+<a href="Solutions24.html">24</a>
+<a href="Solutions25.html">25</a>
+<a href="Solutions26.html">26</a>
+&nbsp; </td>
+</tr></table>
+
+<table border="0" cellpadding="8">
+<tr valign="top" bgcolor="#c6ced6" align="center">
+<td><a href="http://www.skylit.com/javamethods/index.html">
+<cite>Java Methods</cite> Home Page</a></td>
+<td><a href="http://www.skylit.com/index.shtml">Skylight Publishing</a></td>
+</tr>
+</table>
+<br><br><br>
+
+<h3><i>Java Methods A & AB:<br>
+Object-Oriented Programming and Data Structures</i></h3>
+<h3>Answers and Solutions to Exercises</h3>
+<h2>Chapter 10</h2>
+</center>
+
+<table><tr valign="top"><td width="15"><strong>1.</strong></td>
+<td width="20">&nbsp;</td>
+<td>Should be
+<xmp>
+  String fileName = "c:\\dictionaries\\words.txt";</xmp></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>2.</strong></td>
+<td width="20"><b>(a)</b></td>
+<td><xmp>
+
+  private boolean endsWithStar(String s)
+  {
+    int len = s.length();
+    return len > 0 && s.charAt(len - 1) == '*';
+  }</xmp>
+
+or
+<xmp>
+  private boolean endsWithStar(String s)
+  {
+    return s.endsWith("*");
+  }</xmp></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>4.</strong></td>
+<td width="20"><b>(a)</b></td>
+<td>
+<xmp>
+
+    dateStr = dateStr.substring(3,5) + '-' +
+              dateStr.substring(0,2) + '-' +
+              dateStr.substring(6);</xmp></td>
+</tr></table>
+
+
+<table><tr valign="top"><td width="15"><strong>5.</strong></td>
+<td width="20"><b>(a)</b></td>
+<td>
+<xmp>
+
+    String last4 = ccNumber.substring(15);</xmp></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>11.</strong></td>
+<td width="20">&nbsp;</td>
+<td><xmp>
+
+  public String cutOut(String s, String s2)
+  {
+    int n = s.indexOf(s2);
+    if (n > 0)
+      s = s.substring(0, n) + s.substring(n + s2.length());
+
+    return s;
+  }</xmp></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>15.</strong></td>
+<td width="20">&nbsp;</td>
+<td><xmp>
+
+  public boolean onlyDigits(String s)
+  {
+    for (int i = 0; i < s.length(); i++)
+      if (!Character.isDigit(s.charAt(i)))
+        return false;
+    return true;
+  }</xmp></td>
+</tr></table>
+
+</td></tr>
+</table>
+
+<address>
+<hr width="50%" size="1" align="right">
+<p align="right"><small>Copyright &copy; 2006 by Skylight Publishing</small>
+</address>
+
+</body>
+</html>
+
+

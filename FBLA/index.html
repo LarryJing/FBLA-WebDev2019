@@ -23,13 +23,22 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<script src='js/jquery.min.js'></script>
+	<script src="js/cookie.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script>	
+	$(function() {
+		var COOKIE_NAME = 'splash-page-cookie';
+		$go = Cookies.get(COOKIE_NAME);
+		if ($go == null) {
+			Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
+			console.log(Cookies.get(COOKIE_NAME));
+		}
+		else {
+			$('#splash').fadeOut("slow");
+        	$("section, div").removeClass("afterSplash");
+		}
+	});
+	</script>
 
   </head>
 
@@ -320,7 +329,7 @@
 					<div class="team-specs">
 					<h3>Jeff Smith</h3>
 					<h4> CPA, Shareholder</h4>
-					<p>Jeff has been in practice for over 30 years. Prior to starting his own firm in 1985, he was a partner in a small CPA firm located in Great Neck, NY and worked as an internal auditor and financial analyst for a Fortune 500 company.</p>
+					<p>Jeff has been in practice for over 10 years. Prior to starting his own firm in 2007, he was a partner in a small CPA firm located in Great Neck, NY and worked as an internal auditor and financial analyst for a Fortune 500 company.</p>
 
 
 					</div>
@@ -347,7 +356,7 @@
 					<div class="team-specs">
 					<h3>Zoey Bhardwaj</h3>
 					<h4>Senior Accountant/Advisor</h4>
-					<p>Zoey Bhardwaj, mother of two has been in the accounting profession for approximately 20 years. She received her BBA in Accounting from Harvard College. Zoey is a NorCal native and currently resides in San Francisco.</p>
+					<p>Zoey Bhardwaj, mother of two has been in the accounting profession for approximately 11 years. She received her BBA in Accounting from Harvard College. Zoey is a NorCal native and currently resides in San Francisco.</p>
 
 
 					</div>

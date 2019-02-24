@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Java Methods Answers/Solutions Chapter 19</title>
+<head>
+
+<body bgcolor="white">
+
+
+<table width="600">
+<tr><td>
+
+<center>
+<p>Solutions to other chapters:
+
+<table border="0" cellpadding="8">
+<tr valign="top" bgcolor="#c6ced6">
+<td> &nbsp;
+<a href="Solutions01.html">1</a>
+<a href="Solutions02.html">2</a>
+<a href="Solutions03.html">3</a>
+<a href="Solutions04.html">4</a>
+<a href="Solutions05.html">5</a>
+<a href="Solutions06.html">6</a>
+<a href="Solutions07.html">7</a>
+<a href="Solutions08.html">8</a>
+<a href="Solutions09.html">9</a>
+<a href="Solutions10.html">10</a>
+<a href="Solutions11.html">11</a>
+<a href="Solutions12.html">12</a>
+<a href="Solutions13.html">13</a>
+<a href="Solutions14.html">14</a>
+<a href="Solutions15.html">15</a>
+<a href="Solutions16.html">16</a>
+<a href="Solutions17.html">17</a>
+<a href="Solutions18.html">18</a>
+19
+<a href="Solutions20.html">20</a>
+<a href="Solutions21.html">21</a>
+<a href="Solutions22.html">22</a>
+<a href="Solutions23.html">23</a>
+<a href="Solutions24.html">24</a>
+<a href="Solutions25.html">25</a>
+<a href="Solutions26.html">26</a>
+&nbsp; </td>
+</tr></table>
+
+<table border="0" cellpadding="8">
+<tr valign="top" bgcolor="#c6ced6" align="center">
+<td><a href="http://www.skylit.com/javamethods/index.html">
+<cite>Java Methods</cite> Home Page</a></td>
+<td><a href="http://www.skylit.com/index.shtml">Skylight Publishing</a></td>
+</tr>
+</table>
+<br><br><br>
+
+<h3><i>Java Methods A & AB:<br>
+Object-Oriented Programming and Data Structures</i></h3>
+<h3>Answers and Solutions to Exercises</h3>
+<h2>Chapter 19</h2>
+</center>
+
+<table><tr valign="top"><td width="15"><strong>2.</strong></td>
+<td width="20">&nbsp;</td>
+<td><xmp>
+  public <E> void append(List<E> list1, List<E> list2)
+  {
+    for (int i = 0; i < list2.size(); i++)
+      list1.add(list2.get(i));
+  }
+</xmp></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>6.</strong></td>
+<td width="20">&nbsp;</td>
+<td><xmp>
+  public double sum2(List<Double> list)
+  {
+    double sum = 0;
+
+    ListIterator<Double> iter1 = list.listIterator();
+    while (iter1.hasNext())
+    {
+      double a = iter1.next().doubleValue();
+      ListIterator<Double> iter2 = list.listIterator(iter1.nextIndex());
+
+      while (iter2.hasNext())
+      {
+        sum += a * iter2.next().doubleValue();
+      }
+    }
+
+    return sum;
+  }
+</xmp></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>8.</strong></td>
+<td width="20">&nbsp;</td>
+<td><pre>Three-Two
+Three-Two-One
+Three-Two-One</pre></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>10.</strong></td>
+<td width="20"><b>(b)</b></td>
+<td>The following simplification uses <code>Point</code>'s
+copy constructor:
+
+<xmp>
+    Point cursor;
+    Stack<Point> stk = new Stack<Point>();
+    ...
+    // Save cursor position:
+    stk.push(new Point(cursor));
+
+    show(new LoginWindow());
+    ...
+    // Restore cursor position:
+    cursor = stk.pop();
+</xmp>
+Recall that a stack holds references to objects.&nbsp;
+It is necessary to make and push a copy
+of <code>cursor</code> because subsequent code may change
+the original.</td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>13.</strong></td>
+<td width="20">&nbsp;</td>
+<td><code>0 2 1 3 2 4</code></td>
+</tr></table>
+
+<table><tr valign="top"><td width="15"><strong>21.</strong></td>
+<td width="20"><b>(a)</b></td>
+<td><i>O</i>(1)</td>
+</tr><tr valign="top"><td></td>
+<td width="20"><b>(c)</b></td>
+<td><i>O</i>(<i>n</i>)</td>
+</tr></table>
+
+<br><br><br>
+
+</td></tr>
+</table>
+
+<address>
+<hr width="50%" size="1" align="right">
+<p align="right"><small>Copyright &copy; 2006 by Skylight Publishing</small>
+</address>
+
+</body>
+</html>
+
