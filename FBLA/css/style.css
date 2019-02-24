@@ -247,7 +247,7 @@ ul.u-one, ul.u-two {
 .rapCalendar{    padding: 0;background:#dedede !important; box-shadow:none; text-shadow:none; border-radius:0px;}
 
 .rapCalendar table {   width: 100%; margin:0;}
-.rapCalendar thead{color:#fff; text-shadow:none; background:#44bf54;}
+.rapCalendar thead{color:#fff; text-shadow:none; background:black;}
 .rapCalendar th {
     text-align: center;
     padding: 15px 0;
