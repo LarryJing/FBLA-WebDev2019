@@ -34,7 +34,7 @@
 			console.log(Cookies.get(COOKIE_NAME));
 		}
 		else {
-			$('#splash').fadeOut("slow");
+			$('.splash').removeClass("splash");
         	$("section, div").removeClass("afterSplash");
 		}
 	});
@@ -569,7 +569,7 @@ United States</strong></p>
 
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="Click to return on the top page" style="display: inline;"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-	<div id="splash">
+	<div class="splash">
 		<div class="component">
 				<ul class="align">
 					<li>
@@ -634,7 +634,7 @@ United States</strong></p>
 	<script>
 	$(document).ready(function(){
 		$('.link-button').click(function () {
-        	$('#splash').fadeOut("slow");
+        	$('.splash').fadeOut("slow");
         	$("section, div").removeClass("afterSplash");
     });
 

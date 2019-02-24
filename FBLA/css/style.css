@@ -359,7 +359,7 @@ ul.u-one, ul.u-two {
   background-size: cover;
 }
 
-#splash {
+.splash {
     top: 0;
     left: 0;    
     width: 100%;
