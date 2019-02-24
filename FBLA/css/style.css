@@ -442,8 +442,11 @@ Table of Contents
 
 .book {
     position: relative;
-    width: 160px; 
-    height: 220px;
+    /*width: 160px; 
+    height: 220px;*/
+    width: 200px; 
+    height: 260px;
+    box-align: center;
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
     perspective: 1000px;
@@ -510,7 +513,7 @@ Table of Contents
 
 .page > li {
     background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-    box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+    /*box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);*/
 }
 
 /*
@@ -637,7 +640,7 @@ Table of Contents
     -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
 }
 .hardcover_front li:last-child:before {
-    box-shadow: 0px 0px 30px 5px #333;
+    /*box-shadow: 0px 0px 30px 5px #333;*/
     -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
 }
 
@@ -665,7 +668,7 @@ Table of Contents
 }
 
 .hardcover_back li:last-child:before {
-    box-shadow: 10px -1px 80px 20px #666;
+    /*box-shadow: 10px -1px 80px 20px #666;*/
     -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
 }
 
@@ -710,7 +713,7 @@ Table of Contents
 }
 
 .book_spine li:last-child:before {
-    box-shadow: 5px -1px 100px 40px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 5px -1px 100px 40px rgba(0, 0, 0, 0.2);*/
     -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
 }
 
