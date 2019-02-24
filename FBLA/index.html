@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/hover-min.css">
 
-	
-	
-	
+
+
+
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,8 +35,9 @@
 
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-   <div class="main">
+<div class="main">
 	<section class="header" id="myheader">
+    {{#if }}
 		<nav class="navbar navbar-static-top my-nav" id="main-menu">
       <div class="container">
         <div class="navbar-header">
@@ -49,92 +50,91 @@
           <a class="navbar-brand wow bounceInUp" href="index.html"><img src="img/logo.png" alt=""></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-<ul class="nav navbar-nav navbar-right">
-              <!--li><a href="#banner">Home</a></li-->
-			<li><a class="hvr-float" href="#services">Our Services</a></li>
-            <li class="active hvr-float"><a href="#about">About Us </a></li>
-            <li><a class="hvr-float" href="#testimonial">Our Work</a></li>
-			<li><a class="hvr-float" href="#our_team">The Team</a></li>
-			<li><a class="hvr-float" href="#talk">Let's Talk</a></li>
-			<li><a class="hvr-float" href="#contact_us">Contact Us</a></li>
+          <ul class="nav navbar-nav navbar-right">
+          			<li><a class="hvr-float" href="#services">Our Services</a></li>
+                      <li class="active hvr-float"><a href="#about">About Us </a></li>
+                      <li><a class="hvr-float" href="#testimonial">Our Work</a></li>
+          			<li><a class="hvr-float" href="#our_team">The Team</a></li>
+          			<li><a class="hvr-float" href="#talk">Let's Talk</a></li>
+          			<li><a class="hvr-float" href="#contact_us">Contact Us</a></li>
           </ul>
-		                       
         </div>
       </div>
     </nav>
+    {{/if}}
 	</section>
 
 	<section id="banner" class="banner-sec">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="carousel slide" id="carousel-example-captions" data-ride="carousel"> 
-					
-					<ol class="carousel-indicators"> 
-						<li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li> <li data-target="#carousel-example-captions" data-slide-to="1"></li> 
-						<li data-target="#carousel-example-captions" data-slide-to="2"></li> 
-						</ol> 
-						<div class="carousel-inner" role="listbox"> 
-						
-						<div class="item active banner"> 
+					<div class="carousel slide" id="carousel-example-captions" data-ride="carousel">
+
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li> <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+						<li data-target="#carousel-example-captions" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+
+						<div class="item active banner">
 							<div class="container">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="banner-cont">
 									<h1>Small Business <span class="bg-yellow">Accounting </span>Services</h1>
 									<p><a href="index.html#talk">Start Free Trial</a></p>
 									</div>
-								
-								
+
+
 								</div>
-							
+
 							</div>
-							
-						</div> 
-							
-							<div class="item banner"> 
+
+						</div>
+
+							<div class="item banner">
 							<div class="container">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="banner-cont">
 									<h1>Enterprise <span class="bg-yellow">Accounting </span>Services</h1>
 									<p><a href="index.html#talk">Start Free Trial</a></p>
 									</div>
-								
-								
+
+
 								</div>
-							
+
 							</div>
-							
-						</div> 
-							
-							<div class="item banner"> 
+
+						</div>
+
+							<div class="item banner">
 							<div class="container">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="banner-cont">
 									<h1>personal <span class="bg-yellow">Accounting </span>Services</h1>
 									<p><a href="index.html#talk">Start Free Trial</a></p>
 									</div>
-								
-								
+
+
 								</div>
-							
+
 							</div>
-							
-						</div>  
-							
+
+						</div>
+
 							</div> <a href="#carousel-example-captions" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a href="#carousel-example-captions" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-				
-				
-					
-					
-				
+
+
+
+
+
 				</div>
 				<div class="headline wow zoomInDown">
 					<p>Superior accounting and consulting services customized for the needs of your business </p>
 				</div>
-			
+
 			</div>
 		</div>
-	
+
 	</section>
 	<section id="services" class="services">
 		<div class="container">
@@ -147,71 +147,71 @@
 				<img src="img/ser-1.png" alt="">
           <h2>Perfect Books</h2>
           <p>As your bookkeeping team, we will import bank statements, categorize transactions and prepare financial statements every month. </p>
-         
+
         </div>
 		<div class="col-md-4 wow flipInX">
 		<img src="img/ser-2.png" alt="">
           <h2>Tax Season minus the stress</h2>
           <p>Our tax and audit service will cover all your needs when it comes to filing taxes. We will make sure your taxes are filed painlessly and accurately. </p>
-         
+
         </div>
 		<div class="col-md-4 wow slideInRight">
 		<img src="img/ser-3.png" alt="">
           <h2>Stay in control of your finances</h2>
           <p>Monthly and annual financial statements, payroll and expense overview to keep you in control of your money. Actionable insights to help you grow. </p>
-        
+
         </div>
-			
+
 			</div>
 		</div>
-	
+
 	</section>
-	
+
 	<section id="about" class="about-us">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h3 class="heading">About <span class="bg-yellow">Us</span></h3>
 					<p class="sub-heading">At Accuracy Accounting, we manage all aspects of your accounting. Including, payroll, taxes, book-keeping and more. Staying on top of your finances has never been easier. </p>
-					
+
 				</div>
 				<div class="clearfix"></div>
 				<div class="col-md-6">
 					<div class="about-box wow slideInLeft" data-wow-duration="1s">
 					<h4>Exceptional Customer Services</h4>
 						<p>Our mission is to make managing your finances as simple as possible. We do this by providing you services tailor-made for your specific needs. </p>
-					
+
 					</div>
-				
+
 				</div>
 				<div class="col-md-6">
 					<div class="about-box wow slideInRight" data-wow-duration="1s">
 					<h4>Trusted</h4>
 						<p>Our reputation for accuracy and attention has made us one of the financial community’s most recommended accounting form. </p>
-					
+
 					</div>
-				
+
 				</div>
 				<div class="col-md-6">
 					<div class="about-box wow slideInLeft">
 					<h4>Experienced</h4>
 						<p>Our team is occupied entirely of highly experienced, personally dedicated advisers and financial experts who excel both at strategy and execution. </p>
-					
+
 					</div>
-				
+
 				</div>
 				<div class="col-md-6">
 					<div class="about-box wow slideInRight">
 					<h4>Our Values</h4>
 						<p> We know that running a business can be hard. That is why our team of accountants takes book-keeping and taxes out of the picture.</p>
-					
+
 					</div>
-				
+
 				</div>
 
 			</div>
 		</div>
-	
+
 	</section>
 
 <section class="testimonial" id="testimonial">
@@ -222,24 +222,24 @@
 				<p class="sub-heading">What our clients say: </p>
 			</div>
 			<div class="clearfix"></div>
-			
-		
+
+
 		</div>
-	
+
 	</div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="slider-test">
-					<div class="carousel slide" id="carousel-example-captions2" data-ride="carousel"> 
-					
-					<ol class="carousel-indicators"> 
-						<li data-target="#carousel-example-captions2" data-slide-to="0" class=""></li> <li data-target="#carousel-example-captions" data-slide-to="1" class="active"></li> 
-						<li data-target="#carousel-example-captions2" data-slide-to="1" class=""></li> 
-						</ol> 
-						<div class="carousel-inner" role="listbox"> 
-						
-						<div class="item banner active"> 
+					<div class="carousel slide" id="carousel-example-captions2" data-ride="carousel">
+
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-captions2" data-slide-to="0" class=""></li> <li data-target="#carousel-example-captions" data-slide-to="1" class="active"></li>
+						<li data-target="#carousel-example-captions2" data-slide-to="1" class=""></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+
+						<div class="item banner active">
 							<div class="container">
 								<div class="col-md-4">
 									<div class="test-cont">
@@ -249,11 +249,11 @@
 											<h4 class="client-name">John Harpen </h4>
 											<h5 class="designation">Owner, Buzzkill Inc.</h5>
 
-										
+
 										</div>
 									</div>
-								
-								
+
+
 								</div>
 								<div class="col-md-4">
 									<div class="test-cont">
@@ -263,11 +263,11 @@
 											<h4 class="client-name">Andrea Mercal</h4>
 											<h5 class="designation">CEO, Lotus Pharma</h5>
 
-										
+
 										</div>
 									</div>
-								
-								
+
+
 								</div>
 								<div class="col-md-4">
 									<div class="test-cont">
@@ -277,27 +277,27 @@
 											<h4 class="client-name">Abbie Taylor</h4>
 											<h5 class="designation">Co-founder, Matrix LLC.</h5>
 
-										
+
 										</div>
 									</div>
-								
-								
+
+
 								</div>
-							
+
 							</div>
-							
-						</div> 
-						
-						
-						
-						
-							
-							
-							
-							  
-							
+
+						</div>
+
+
+
+
+
+
+
+
+
 							</div> <a href="#carousel-example-captions2" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a href="#carousel-example-captions2" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-				
+
 				</div>
 			</div>
 		</div>
@@ -319,13 +319,13 @@
 						<img src="img/team-m.png" alt="">
 					</div>
 					<div class="team-specs">
-					<h3>Jeff Smith</h3> 
+					<h3>Jeff Smith</h3>
 					<h4> CPA, Shareholder</h4>
 					<p>Jeff has been in practice for over 30 years. Prior to starting his own firm in 1985, he was a partner in a small CPA firm located in Great Neck, NY and worked as an internal auditor and financial analyst for a Fortune 500 company.</p>
-					
-					
+
+
 					</div>
-				
+
 				</div>
 					<div class="col-md-6 mbt-40 wow fadeInUp">
 					<div class="img-div">
@@ -335,10 +335,10 @@
 					<h3>Hannah Lin </h3>
 					<h4>Senior Accountant</h4>
 					<p>Hannah is the latest addition to the Accuracy family. She graduated top of her class from Columbia (Magnax Sum Laude) in 2016 and has been helping our clients take care of their money ever since. </p>
-					
-					
+
+
 					</div>
-				
+
 				</div>
 				<div class="clearfix"></div>
 					<div class="col-md-6 mbt-40 wow fadeInUp">
@@ -349,10 +349,10 @@
 					<h3>Zoey Zhou</h3>
 					<h4>Senior Accountant/Advisor</h4>
 					<p>Zoey Zhou, mother of two has been in the accounting profession for approximately 20 years. She received her BBA in Accounting from Harvard College. Zoey is a NorCal native and currently resides in San Francisco.</p>
-					
-					
+
+
 					</div>
-				
+
 				</div>
 					<div class="col-md-6 mbt-40 wow fadeInUp">
 					<div class="img-div">
@@ -368,14 +368,14 @@
 						<li><a href=""><i class="fa fa-twitter"></i></a></li>
 						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
 					</ul-->
-					
+
 					</div>
-				
+
 				</div>
-				
+
 			</div>
 		</div>
-	
+
 	</div>
 </section>
 <section class="ind-serve">
@@ -389,8 +389,8 @@
 						<li>Healthcare Professionals</li>
 						<li>Restaurant Franchise</li>
 					</ul>
-					
-					
+
+
 				</div>
 		</div>
 	</div>
@@ -404,53 +404,53 @@
 				<h3 class="heading">Let's <span class="bg-yellow">Talk</span></h3>
 				<p class="sub-heading">Our team of experts is waiting to hear from you! Take the first step towards stress-free financial well being. Schedule a time for your first consultancy today!</p>
 			</div>
-			
+
 			<div class="col-md-12">
 				<div class="free-consult">
 					<div class="col-md-4">
 						<div id="demo"></div>
-					
+
 					</div>
 					<div class="col-md-8">
 						<div class="col-md-12"><h3>Free Consult</h3></div>
 						<form class="form-inline form-m">
-							<div class="form-group col-md-6"> 
+							<div class="form-group col-md-6">
 							<label class="sr-only" for="exampleInputEmail3">Name</label>
 							<input type="text" class="form-control" id="" placeholder="Name">
 							</div>
-							<div class="form-group col-md-6"> 
+							<div class="form-group col-md-6">
 							<label class="sr-only" for="exampleInputEmail3">Email address</label>
 							<input type="text" class="form-control" id="" placeholder="Designation">
 							</div>
-							<div class="form-group col-md-6"> 
+							<div class="form-group col-md-6">
 							<label class="sr-only" for="exampleInputEmail3">Email address</label>
 							<input type="email" class="form-control" id="" placeholder="Email">
 							</div>
-							<div class="form-group col-md-6"> 
+							<div class="form-group col-md-6">
 							<label class="sr-only" for="exampleInputEmail3">Company Name</label>
 							<input type="text" class="form-control" id="" placeholder="Company Name">
 							</div>
-							<div class="form-group col-md-12"> 
+							<div class="form-group col-md-12">
 							<label class="sr-only" for="exampleInputEmail3">Phone</label>
 							<input type="text" class="form-control" id="" placeholder="Phone">
 							</div>
-							<!--div class="form-group col-md-6"> 
+							<!--div class="form-group col-md-6">
 							<label class="sr-only" for="exampleInputEmail3">Time</label>
 							<input type="date" class="form-control" id="" placeholder="Date">
 							</div-->
 							<div class="form-group col-md-12">
 								<textarea placeholder="Comments" class="form-control" rows="3"></textarea>
-							
+
 							</div>
 							<div class="form-group col-md-3">
 								<input type="submit" class="form-control" placeholder="">
-							
+
 							</div>
 						</form>
-					
+
 					</div>
 				</div>
-			
+
 			</div>
 		</div>
 	</div>
@@ -462,44 +462,44 @@
 			<div class="col-md-3 foot-logo col-sm-6">
 				<img src="img/logo.png" alt="">
 				<p>This site is for educational purposes only and is only a submission for FBLA's Website Design competition. All products or services offered are fictional.</p>
-				<p><strong>21370 Homestead Ave, <br> 
+				<p><strong>21370 Homestead Ave, <br>
 Cupertino, CA 95014
 United States</strong></p>
-			
+
 			</div>
 				<div class="col-md-2 col-sm-6">
 					<h3>Site Map</h3>
 					<ul class="u-one">
-						<li><a href="index.html">Home</a></li> 
-						<li><a href="#about">About Us</a></li> 
-						<li><a href="#services">Our Services</a></li> 
-						<li><a href="#testimonial">our work</a></li> 
-						<li><a href="#our_team">The Team</a></li> 
-						<li><a href="#talk">let’s talk</a></li> 
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Our Services</a></li>
+						<li><a href="#testimonial">our work</a></li>
+						<li><a href="#our_team">The Team</a></li>
+						<li><a href="#talk">let’s talk</a></li>
 
 					</ul>
-					
+
 					<!--ul  class="">
-						<li><a href="">Home</a></li> 
-						<li><a href="">About Us</a></li> 
-						<li><a href="">Services</a></li> 
-						<li><a href="">our work</a></li> 
-						<li><a href="">let’s talk</a></li> 
+						<li><a href="">Home</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">our work</a></li>
+						<li><a href="">let’s talk</a></li>
 
 					</ul-->
-					
-					
+
+
 				</div>
-				
+
 				<div class="col-md-4 col-sm-6">
 					<h3>Locate Us</h3>
 					<div class="map-sec">
 					<div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.2502603115827!2d-122.05053528469496!3d37.33658347984152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb43a83de4155%3A0x26113f8c7f3e7fbd!2s21370+Homestead+Rd%2C+Sunnyvale%2C+CA+94087!5e0!3m2!1sen!2sus!4v1550727539794" wframeborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><!-- <a href="https://www.crocothemes.net">crocothemes.net</a> --></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style><!-- Google Maps by <a href="https://www.embedgooglemap.net" rel="nofollow" target="_blank">Embedgooglemap.net</a> --></div>
-					
+
 					</div>
-				
+
 				</div>
-				
+
 				<div class="col-md-3 con col-sm-6">
 					<h3>Contact Us</h3>
 					<a href="tel:+872462-4612"><img src="img/menu-icon.png" alt="">(510) 936-2229</a>
@@ -511,34 +511,34 @@ United States</strong></p>
 						<li><a href=""><i class="fa fa-twitter"></i></a></li>
 						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
 					</ul-->
-					
+
 				</div>
 				<div class="clearfix"></div>
-				
+
 				<div class="col-md-12">
 					<ul class="page-s">
 						<li><a href="faq.html">FAQ</a></li>
 						<li><a href="privacy-policy.html">Privacy policy</a></li>
 						<li><a href="pricing.html">Pricing </a></li>
-					
+
 					</ul>
-				
+
 				</div>
-				
-				
+
+
 		</div>
-	
+
 	</div>
 </section>
 <section class="rights">
 	<div class="container">
 		<div class="row">
-			<p>© <span class="bg-yellow">Homestead FBLA</span> 2019. 
+			<p>© <span class="bg-yellow">Homestead FBLA</span> 2019.
 				<!-- <p>
 					This site is for educational purposes only and is only a submission for FBLA's Website Design competition. All products or services offered are fictional.
 				</p> -->
 			</p>
-		
+
 		</div>
 	</div>
 
@@ -552,7 +552,7 @@ United States</strong></p>
             <div id="fpi_content">
                 <div id="wpcf7-f1490-t1-o1" class="wpcf7">
                 </div>
-            </div> 
+            </div>
         </div>
 
 
@@ -561,6 +561,60 @@ United States</strong></p>
 
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="Click to return on the top page" style="display: inline;"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
+<<<<<<< HEAD
+=======
+	<div id="splash">
+		<div class="component">
+				<ul class="align">
+					<li>
+						<figure class='book'>
+							<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<h2 class='title'>Welcome to Accuracy</h2>
+								</li>
+								<li></li>
+							</ul>
+
+							<!-- Pages -->
+
+							<ul class='page'>
+								<li>
+									<!-- fifth page -->
+								</li>
+								<li>
+									<a class="btn link-button" href="#">Join Here</a>
+								</li>
+								<li>
+									<!-- third page -->
+								</li>
+								<li>
+									<!-- second page -->
+								</li>
+								<li>
+									<!-- first page -->
+								</li>
+							</ul>
+
+							<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+						</figure>
+					</li>
+				</ul>
+
+				<span class="cover turn"></span>
+			</div>
+	</div>
+>>>>>>> 8b10df18c5ba92ba69d4b59af642fc14ff035238
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -571,12 +625,12 @@ United States</strong></p>
 	<script>
 		$(window).scroll(function(){$(this).scrollTop()>50?$("#back-to-top").fadeIn():$("#back-to-top").fadeOut()}),$("#back-to-top").click(function(){return $("#back-to-top").tooltip("hide"),$("body,html").animate({scrollTop:0},800),!1}),$("#back-to-top").tooltip("show")
 	</script>
-	
+
 	<script>
 	$(document).ready(function(){
 		$('.link-button').click(function () {
         	$('#splash').fadeOut("slow");
-    });	
+    });
 
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -593,13 +647,13 @@ United States</strong></p>
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-  
+
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
