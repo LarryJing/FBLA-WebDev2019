@@ -792,7 +792,10 @@ Table of Contents
     -webkit-transition-duration: 1.2s;
 }
 
+.afterSplash {
+    display: none;
 
+}
 
 @media screen and (max-width: 37.8125em) {
     .align > li {

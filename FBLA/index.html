@@ -36,8 +36,7 @@
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <div class="main">
-	<section class="header" id="myheader">
-    {{#if }}
+	<section class="header afterSplash" id="myheader">
 		<nav class="navbar navbar-static-top my-nav" id="main-menu">
       <div class="container">
         <div class="navbar-header">
@@ -543,7 +542,7 @@ United States</strong></p>
 	</div>
 
 </section>
-		<div id="fpi_feedback" style="width: 60px;">
+		<div class="afterSplash" id="fpi_feedback" style="width: 60px;">
 
             <div class="rotate" id="fpi_title" data-toggle="modal" data-target="#myModal">
                 <a  id="request_btn">Request Quote</a>
@@ -627,6 +626,7 @@ United States</strong></p>
 	$(document).ready(function(){
 		$('.link-button').click(function () {
         	$('#splash').fadeOut("slow");
+        	$("section, div").removeClass("afterSplash");
     });
 
   // Add smooth scrolling to all links in navbar + footer link
