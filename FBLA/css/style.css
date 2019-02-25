@@ -404,6 +404,8 @@ ul.u-one, ul.u-two {
 .intro {
     text-align: center;
     margin: 60px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     color: black;
 }
 
@@ -864,7 +866,7 @@ Table of Contents
 
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #D4AF37;
     z-index: 1500;
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -881,7 +883,7 @@ Table of Contents
 
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: white;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -896,7 +898,7 @@ Table of Contents
 
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #D4AF37;
 
     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
