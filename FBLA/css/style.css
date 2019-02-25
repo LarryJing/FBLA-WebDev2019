@@ -403,7 +403,7 @@ ul.u-one, ul.u-two {
 
 .intro {
     text-align: center;
-    margin: 60px;
+    margin: 5%;
     margin-bottom: 20px;
     padding-bottom: 20px;
     color: black;
@@ -485,7 +485,10 @@ Table of Contents
 
 .book {
     position: fixed;
-    top:-100%; right:-100%; left:-90%; bottom:-100%;
+    top: 30%; 
+    right:-110%; 
+    left:-90%; 
+    bottom: 30%;
     margin: auto;
     z-index:0;
     /*width: 160px;
