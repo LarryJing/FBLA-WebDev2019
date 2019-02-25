@@ -31,21 +31,41 @@
 		$go = Cookies.get(COOKIE_NAME);
 		if ($go == null) {
 			Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
-			location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+			setTimeout(function(){
+		        location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+	    	}, 3000);
+
+			// location.replace("http://webdesign2019.hhsfbla.com/splash.html");
 			//window.location = "http://webdesign2019.hhsfbla.com/splash.html";
 		}
 		else {
 
 		}
 	});
+
+	$(document).ready(function() {
+ 
+	    setTimeout(function(){
+	    	$('body').addClass('loaded');
+	        setTimeout(function(){
+	    	$('.is-loading').removeClass('is-loading');
+	    	}, 700);
+	    }, 2000);
+ 
+	});
 	</script>
 
   </head>
 
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+    </div>
 
 <div class="main">
-	<section class="header" id="myheader">
+	<section class="header is-loading" id="myheader">
 		<nav class="navbar navbar-static-top my-nav" id="main-menu">
       <div class="container">
         <div class="navbar-header">
@@ -553,7 +573,7 @@ United States</strong></p>
 </section>
 		<div id="fpi_feedback" style="width: 60px;">
 
-            <div class="rotate" id="fpi_title" data-toggle="modal" data-target="#myModal">
+            <div class="rotate is-loading" id="fpi_title" data-toggle="modal" data-target="#myModal">
                 <a  id="request_btn">Request Quote</a>
             </div>
 
