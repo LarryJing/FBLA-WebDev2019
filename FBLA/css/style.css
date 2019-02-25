@@ -19,7 +19,20 @@ a, a:hover{text-decoration:none;}
     right: 0;
 }
 .banner-sec .carousel-indicators{display:none;}
-.banner-sec{background:url('../img/banner.png') top center no-repeat; background-size:cover;position:relative;}
+.banner-sec{
+    background:url('../img/banner.png')
+    top center no-repeat;
+    background-size:cover;
+    position:relative;
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .spl-ban{height:350px;background:url('../img/banner.png') top center no-repeat; background-size:cover;position:relative;}
 .spl-ban h2{    line-height: 320px;
     color: #fff;
@@ -92,7 +105,21 @@ a, a:hover{text-decoration:none;}
 
 /*about css*/
 .services .col-md-4 p{font-size: 16px; font-weight: 100; color: #000;}
-.about-us{padding:50px 0;text-align:center;background:url('../img/abt-ban.png')top center no-repeat; background-size:cover;}
+.about-us{
+    padding:50px 0;
+    text-align:center;
+    background:url('../img/abt-ban.png')
+    top center no-repeat;
+    background-size:cover;
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .about-us h3, .about-us p {color:#fff;}
 .about-box h4{font-size:25px; font-weight:bold;color:#e9b85d;}
 .about-box {border:2px solid #e9b85d;margin-bottom:30px; padding:20px;height: 180px;}
@@ -159,7 +186,20 @@ img{max-width:100%;}
 
 
 /*ind-serve*/
-.ind-serve{padding:50px 0; background:url('../img/ban-yellow.png') top center no-repeat; background-size:cover;}
+.ind-serve{
+    padding:50px 0;
+    background:url('../img/ban-yellow.png')
+    top center no-repeat;
+    background-size:cover;
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .ind-serve h3{font-size:40px; color:#fff; font-weight:bold;}
 .ind-serve ul {margin:0px; padding:0px;}
@@ -345,26 +385,12 @@ ul.u-one, ul.u-two {
 
 .page-s li a{ display:inline-block; padding:0 10px;}
 
-.parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .splash {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #D4AF37;
+    background: #EEDF11;
     opacity: 1;
     position:fixed;
     overflow:hidden;
@@ -373,6 +399,12 @@ ul.u-one, ul.u-two {
 ::before,
 ::after {
     content: "";
+}
+
+.intro {
+    text-align: center;
+    margin: 60px;
+    color: black;
 }
 
 ul {
@@ -390,7 +422,7 @@ a {
     display: inline-block;
     text-transform: uppercase;
     border: 2px solid #2c3e50;
-    margin-top: 100px;
+    margin-top: 20px;
     font-size: 0.7em;
     font-weight: 700;
     padding: 0.1em 0.4em;
@@ -401,8 +433,12 @@ a {
 }
 
 .btn:hover {
-    border-color: gold;
+    border-color: #D4AF37;
     color: black;
+}
+
+.pgtext {
+    margin-top: 70px;
 }
 
 .align {
@@ -420,6 +456,11 @@ a {
     margin: 30px 20px 30px 30px;
     padding: 0 0 0 60px;
     vertical-align: top;
+}
+
+.logo {
+    width: 80%;
+    height: 20%;
 }
 
 /* ///////////////////////////////////////////////////
@@ -447,8 +488,8 @@ Table of Contents
     z-index:0;
     /*width: 160px;
     height: 220px;*/
-    width: 200px;
-    height: 260px;
+    width: 240px;
+    height: 300px;
     box-align: center;
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
@@ -468,7 +509,7 @@ Table of Contents
 }
 
 .hardcover_front .title {
-    color: gold;
+    color: #D4AF37;
     text-align: center;
     padding: 5px;
 }
@@ -489,10 +530,10 @@ Table of Contents
 }
 
 .book_spine li:first-child {
-    background: gold;
+    background: #D4AF37;
 }
 .book_spine li:last-child {
-    background: gold;
+    background: #D4AF37;
 }
 
 /* thickness of cover */
@@ -509,7 +550,7 @@ Table of Contents
 .book_spine li:first-child:before,
 .book_spine li:last-child:after,
 .book_spine li:last-child:before {
-    background: gold;
+    background: #D4AF37;
 }
 
 /* page */
