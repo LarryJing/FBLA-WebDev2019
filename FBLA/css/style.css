@@ -284,7 +284,14 @@ ul.u-one, ul.u-two {
     padding: 14px 0;
 }
 
-.rapCalendar{    padding: 0;background:#dedede !important; box-shadow:none; text-shadow:none; border-radius:0px;}
+.rapCalendar{
+    padding: 0;
+    background:#dedede !important;
+    box-shadow:none;
+    text-shadow:none;
+    border-radius:0px;
+    border: 3px solid #848484;
+}
 
 .rapCalendar table {   width: 100%; margin:0;}
 .rapCalendar thead{color:#fff; text-shadow:none; background:black;}
@@ -307,8 +314,8 @@ ul.u-one, ul.u-two {
     border-radius: 0px;
     font-weight: bold;
     text-shadow:none;
-    color: #e9b85d;
-    /*color: red;*/
+    /*color: #e9b85d;*/
+    color: red;
 }
 .rapCalendar .larr, .rapCalendar .rarr{  color: #fff;}
 .rapCalendar .calSelectable:hover {
@@ -318,8 +325,8 @@ ul.u-one, ul.u-two {
     cursor: pointer;
     font-weight: bold;
     border: none;
-    color: #e9b85d;
-    /*color: red;*/
+    /*color: #e9b85d;*/
+    color: red;
     text-shadow: none;
 }
 .rapCalendar tbody td {
