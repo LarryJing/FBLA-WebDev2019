@@ -124,8 +124,12 @@ return this.each(function(){
 				base.selY = base.curYear;
 				base.selM = base.curMonth;
 				base.selD = $(this).text();
-				if(base.opt.onClick)
-					base.opt.onClick.call(this,base.selY,base.selM,base.selD);
+				if(base.opt.onClick){
+					//base.opt.onClick.call(this,base.selY,base.selM,base.selD);
+					
+					console.log(1);
+				}
+
 			}
 		});
 	}
