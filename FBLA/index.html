@@ -32,7 +32,7 @@
 		if ($go == null) {
 			Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
 			setTimeout(function(){
-		        location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+		        // location.replace("http://webdesign2019.hhsfbla.com/splash.html");
 	    	}, 2000);
 
 			// location.replace("http://webdesign2019.hhsfbla.com/splash.html");
@@ -588,7 +588,7 @@ United States</strong></p>
 
 
 
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="Click to return on the top page" style="display: inline;"><span class="glyphicon glyphicon-chevron-up"></span></a>
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="Click to return on the top page" style="display: inline;"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -613,6 +613,8 @@ United States</strong></p>
       // Store hash
       var hash = this.hash;
 
+      console.log(1);
+
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -621,6 +623,7 @@ United States</strong></p>
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
+
       });
     } // End if
   });
@@ -635,7 +638,7 @@ United States</strong></p>
         }
     });
   });
-})
+
 </script>
 <!--script>
 window.onscroll = function() {myFunction()};
@@ -651,32 +654,32 @@ function myFunction() {
   }
 }
 </script-->
-<script>
+	<script>
 
-$(document).ready(function(){
+	$(document).ready(function(){
 
 
-$('#demo').jsRapCalendar({
-  week:6,
-	onClick:function(y,m,d){
-		alert(y + '-' + m + '-' + d);
-	}
-});
+	$('#demo').jsRapCalendar({
+	  week:6,
+		onClick:function(y,m,d){
+			alert(y + '-' + m + '-' + d);
+		}
+	});
 
-});
-</script>
-<script>
-$("#request_btn").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#talk").offset().top
-    }, 2000);
-});
-</script>
- <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
-<script src="js/jsRapCalendar.js"></script>
-<script
-  </body>
+	});
+	</script>
+	<script>
+	$("#request_btn").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#talk").offset().top
+	    }, 2000);
+	});
+	</script>
+	 <script src="js/wow.min.js"></script>
+	              <script>
+	              new WOW().init();
+	              </script>
+	<script src="js/jsRapCalendar.js"></script>
+
+</body>
 </html>
