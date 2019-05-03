@@ -512,8 +512,8 @@ Table of Contents
     z-index:0;
     /*width: 160px;
     height: 220px;*/
-    width: 240px;
-    height: 300px;
+    width: 24rem;
+    height: 30rem;
     box-align: center;
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
@@ -1041,5 +1041,8 @@ Table of Contents
 	.team-spec .img-div, .team-spec .team-specs{width:100%;}
 	.team-specs{text-align:center;padding:20px 0;}
 	.ind-serve ul li a{font-size: 25px;}
-
+    .book {
+        width: 16rem;
+        height: 22rem;
+    }
 }
