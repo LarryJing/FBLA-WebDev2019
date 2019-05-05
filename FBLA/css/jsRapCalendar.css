@@ -5,7 +5,9 @@
 	box-shadow:4px 4px 6px #000;
 	border-radius:8px;
 	background:radial-gradient(#882,#441);
-	color:#ffe;
+	/*color:#ffe;*/
+	color: #848484;
+	font-weight: bold;
 	padding:8px;
 	text-shadow:-1px 0px black,0px 1px black,1px 0px black,0px -1px black;
 	-moz-user-select: -moz-none;

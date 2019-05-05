@@ -598,9 +598,10 @@ ul.u-two {
 }
 
 .rapCalendar .calDisable {
-    color: #000;
+    color: white;
     font-weight: bold;
     font-size: 16px;
+    background: #b7b7b7;
 }
 
 .rapCalendar caption {
@@ -617,7 +618,7 @@ ul.u-two {
     font-weight: bold;
     text-shadow: none;
     /*color: #e9b85d;*/
-    color: red;
+    color: #D4AF37;
 }
 
 .rapCalendar .larr,
@@ -633,8 +634,9 @@ ul.u-two {
     font-weight: bold;
     border: none;
     /*color: #e9b85d;*/
-    color: red;
+    color: #D4AF37;
     text-shadow: none;
+    background: #6b6b6b;
 }
 
 .rapCalendar tbody td {
@@ -788,6 +790,14 @@ a {
 
 .pgtext {
     margin-top: 70px;
+    padding: 10px;
+}
+
+.reverse {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 
 .align {
@@ -1180,7 +1190,7 @@ Table of Contents
 }
 
 .book:hover>.page li:nth-child(3) {
-    -webkit-transform: rotateY(-118deg);
+    -webkit-transform: rotateY(-125deg);
     -webkit-transition-duration: 1.6s;
 }
 
