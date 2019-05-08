@@ -19,6 +19,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src='js/jquery.min.js'></script>
     <script src="js/cookie.js"></script>
+    <script src="js/script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139597014-1"></script>
     <script>
@@ -29,34 +30,34 @@
       gtag('config', 'UA-139597014-1');
     </script>
     <script>
-        $(function() {
-		var COOKIE_NAME = 'splash-page-cookie';
-		$go = Cookies.get(COOKIE_NAME);
-		if ($go == null) {
-			Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
-			setTimeout(function(){
-		        location.replace("http://webdesign2019.hhsfbla.com/splash.html");
-	    	}, 2000);
+    //     $(function() {
+    //     var COOKIE_NAME = 'splash-page-cookie';
+    //     $go = Cookies.get(COOKIE_NAME);
+    //     if ($go == null) {
+    //         Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
+    //         setTimeout(function(){
+    //             location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+    //         }, 2000);
 
-			location.replace("http://webdesign2019.hhsfbla.com/splash.html");
-			window.location = "http://webdesign2019.hhsfbla.com/splash.html";
-		}
-		else {
+    //         location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+    //         window.location = "http://webdesign2019.hhsfbla.com/splash.html";
+    //     }
+    //     else {
 
-		}
-	});
+    //     }
+    // });
 
-	$(document).ready(function() {
+    $(document).ready(function() {
  
-	    setTimeout(function(){
-	    	$('body').addClass('loaded');
-	        setTimeout(function(){
-	    	$('.is-loading').removeClass('is-loading');
-	    	}, 700);
-	    }, 2000);
+        setTimeout(function(){
+            $('body').addClass('loaded');
+            setTimeout(function(){
+            $('.is-loading').removeClass('is-loading');
+            }, 700);
+        }, 2000);
  
-	});
-	</script>
+    });
+    </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -67,7 +68,7 @@
     </div>
     <div class="main">
         <section class="header is-loading" id="myheader">
-            <nav class="navbar navbar-static-top my-nav" id="main-menu">
+            <nav class="navbar navbar-fixed-top my-nav" id="main-menu">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -312,11 +313,11 @@
                                 <h4>Manager</h4>
                                 <p>Bruce joined Accuracy as an intern in 2014 but has now grown into so much more. Bruce is actively involved in the firm’s tax and consulting services. He has worked with a wide range of clients that include non-profit organizations to fortune 500's.</p>
                                 <!-- ul>
-						<li><a href=""><i class="fa fa-facebook"></i></a></li>
-						<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-						<li><a href=""><i class="fa fa-twitter"></i></a></li>
-						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-					</ul -->
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul -->
                             </div>
                         </div>
                     </div>
@@ -376,9 +377,9 @@
                                         <input type="text" class="form-control" id="" placeholder="Phone">
                                     </div>
                                     <!--div class="form-group col-md-6">
-							<label class="sr-only" for="exampleInputEmail3">Time</label>
-							<input type="date" class="form-control" id="" placeholder="Date">
-							</div-->
+                            <label class="sr-only" for="exampleInputEmail3">Time</label>
+                            <input type="date" class="form-control" id="" placeholder="Date">
+                            </div-->
                                     <div class="form-group col-md-12">
                                         <textarea placeholder="Comments" class="form-control" rows="3"></textarea>
                                     </div>
@@ -413,13 +414,13 @@
                             <li><a href="#talk">let’s talk</a></li>
                         </ul>
                         <!--ul  class="">
-						<li><a href="">Home</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Services</a></li>
-						<li><a href="">our work</a></li>
-						<li><a href="">let’s talk</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">our work</a></li>
+                        <li><a href="">let’s talk</a></li>
 
-					</ul-->
+                    </ul-->
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <h3>Locate Us</h3>
@@ -450,11 +451,11 @@
                         <a href="mailto:info@accuracy.com;"><img src="img/mail-icon.png" alt="">info@accuracy.com</a>
                         <a class="m-btn" href="index.html#talk">Contact Us</a>
                         <!--ul>
-						<li><a href=""><i class="fa f a-facebook"></i></a></li>
-						<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-						<li><a href=""><i class="fa fa-twitter"></i></a></li>
-						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-					</ul-->
+                        <li><a href=""><i class="fa f a-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul-->
                     </div>
                     <div class="clearfix"></div>
                     <div class="col-md-12">
@@ -474,8 +475,8 @@
                 <div class="row">
                     <p>© <span class="bg-yellow">Homestead FBLA</span> 2019.
                         <!-- <p>
-					This site is for educational purposes only and is only a submission for FBLA's Website Design competition. All products or services offered are fictional.
-				</p> -->
+                    This site is for educational purposes only and is only a submission for FBLA's Website Design competition. All products or services offered are fictional.
+                </p> -->
                     </p>
                 </div>
             </div>

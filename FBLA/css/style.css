@@ -43,6 +43,11 @@ a:hover {
     margin-bottom: 0px;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #000 !important;
+  transition: background-color 200ms linear;
+}
+
 .navbar-brand {
     height: auto;
 }
@@ -619,6 +624,7 @@ ul.u-two {
     text-shadow: none;
     /*color: #e9b85d;*/
     color: #D4AF37;
+    background: #6b6b6b;
 }
 
 .rapCalendar .larr,
