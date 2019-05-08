@@ -1360,7 +1360,7 @@ a {
 }
 
 #price_table .content .head_price .head_content .head span {
-    color:  #e9b85d;
+    color: #e9b85d;
 }
 
 .content .feature_list ul li:hover {
@@ -1588,7 +1588,7 @@ a {
 
     #price_table .col-md-4 {
         float: left;
-        width: 50%; 
+        width: 50%;
     }
 
     #price_table .content {
