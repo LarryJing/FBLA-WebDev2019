@@ -43,6 +43,10 @@ a:hover {
     margin-bottom: 0px;
 }
 
+.navbar .menu-fix {
+    visibility: visible !important;
+}
+
 .navbar-fixed-top.scrolled {
     background-color: #000 !important;
     transition: background-color 200ms linear;
