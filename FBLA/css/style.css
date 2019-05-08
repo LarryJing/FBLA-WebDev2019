@@ -44,8 +44,8 @@ a:hover {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #000 !important;
-  transition: background-color 200ms linear;
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
 }
 
 .navbar-brand {
@@ -1378,6 +1378,24 @@ Table of Contents
     display: none;
 }
 
+/*.social-icons-list {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-bottom: 20px;
+}*/
+
+.social {
+    padding-right: 4rem;
+    border: none;
+}
+
+.instagram img {
+    height: 25px;
+}
+
+/*responsive css*/
+
 @media screen and (max-width: 37.8125em) {
     .align>li {
         width: 100%;
@@ -1391,8 +1409,6 @@ Table of Contents
         margin: 0 auto;
     }
 }
-
-/*responsive css*/
 
 
 @media (max-width:767px) {
