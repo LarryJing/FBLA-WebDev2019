@@ -77,12 +77,13 @@
             document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Sending...";
             emailjs.sendForm(service_id, template_id, this)
                 .then(function() {
-                    alert("Sent!");
-                    document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send";
+                    document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Sent!";
+
                 }, function(err) {
-                    alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-                    document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send";
+                    document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Error";
                 });
+            setTimeout(funtcion() { document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send"; }, 10000);
+            setTimeout(function() { document.getElementById('contact-form').reset(); }, 10000);
             return false;
         });
     }
