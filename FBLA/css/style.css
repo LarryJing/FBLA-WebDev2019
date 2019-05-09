@@ -7,6 +7,11 @@ a:hover {
     text-decoration: none;
 }
 
+.policy a,
+.pricing a {
+    border-bottom: 2px solid #e9b85d;
+}
+
 .policy a:hover,
 .pricing a:hover {
     color: #e9b85d;

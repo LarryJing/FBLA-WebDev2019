@@ -16,7 +16,7 @@
 .rapCalendar table{
 	margin:0px auto;
 	border-spacing: 0px;
-    border-collapse:separate;
+    border-collapse: separate;
 }
 .rapCalendar caption{
 	color:#aa3;
@@ -32,6 +32,23 @@
 	width:24px;
 	height:24px;
 }
+
+.rapCalendar tbody: first-child td{
+	border-top: 0px;
+}
+
+.rapCalendar tbody td: first-child{
+	border-left: 0px;
+}
+
+.rapCalendar tbody: last-child td{
+	border-bottom: 0px;
+}
+
+.rapCalendar tbody td: last-child{
+	border-right: 0px;
+}
+
 .rapCalendar .calDisable{
 	color:#ccc;
 }

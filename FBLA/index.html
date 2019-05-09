@@ -30,22 +30,22 @@
       gtag('config', 'UA-139597014-1');
     </script>
     <script>
-            $(function() {
-        var COOKIE_NAME = 'splash-page-cookie';
-        $go = Cookies.get(COOKIE_NAME);
-        if ($go == null) {
-            Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
-            setTimeout(function(){
-                location.replace("http://webdesign2019.hhsfbla.com/splash.html");
-            }, 2000);
+    //         $(function() {
+    //     var COOKIE_NAME = 'splash-page-cookie';
+    //     $go = Cookies.get(COOKIE_NAME);
+    //     if ($go == null) {
+    //         Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
+    //         setTimeout(function(){
+    //             location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+    //         }, 2000);
 
-            location.replace("http://webdesign2019.hhsfbla.com/splash.html");
-            window.location = "http://webdesign2019.hhsfbla.com/splash.html";
-        }
-        else {
+    //         location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+    //         window.location = "http://webdesign2019.hhsfbla.com/splash.html";
+    //     }
+    //     else {
 
-        }
-    });
+    //     }
+    // });
 
     $(document).ready(function() {
  
@@ -376,10 +376,6 @@
                                         <label class="sr-only" for="exampleInputEmail3">Phone</label>
                                         <input type="text" class="form-control" id="" placeholder="Phone">
                                     </div>
-                                    <!--div class="form-group col-md-6">
-                            <label class="sr-only" for="exampleInputEmail3">Time</label>
-                            <input type="date" class="form-control" id="" placeholder="Date">
-                            </div-->
                                     <div class="form-group col-md-12">
                                         <textarea placeholder="Comments" class="form-control" rows="3"></textarea>
                                     </div>
@@ -498,7 +494,7 @@
         </script>
         <script>
         // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        $(".navbar a, .footer a, .banner .banner-cont a").on('click', function(event) {
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
                 // Prevent default anchor click behavior
@@ -506,8 +502,6 @@
 
                 // Store hash
                 var hash = this.hash;
-
-                console.log(1);
 
                 // Using jQuery's animate() method to add smooth page scroll
                 // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
