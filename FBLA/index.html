@@ -23,40 +23,69 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139597014-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-139597014-1');
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139597014-1');
     </script>
     <script>
-            $(function() {
-        var COOKIE_NAME = 'splash-page-cookie';
-        $go = Cookies.get(COOKIE_NAME);
-        if ($go == null) {
-            Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
-            setTimeout(function(){
-                location.replace("http://webdesign2019.hhsfbla.com/splash.html");
-            }, 2000);
+    //         $(function() {
+    //     var COOKIE_NAME = 'splash-page-cookie';
+    //     $go = Cookies.get(COOKIE_NAME);
+    //     if ($go == null) {
+    //         Cookies.set(COOKIE_NAME, 'test', { path: '/', expires: 1 });
+    //         setTimeout(function(){
+    //             location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+    //         }, 2000);
 
-            location.replace("http://webdesign2019.hhsfbla.com/splash.html");
-            window.location = "http://webdesign2019.hhsfbla.com/splash.html";
-        }
-        else {
+    //         location.replace("http://webdesign2019.hhsfbla.com/splash.html");
+    //         window.location = "http://webdesign2019.hhsfbla.com/splash.html";
+    //     }
+    //     else {
 
-        }
-    });
+    //     }
+    // });
 
     $(document).ready(function() {
- 
-        setTimeout(function(){
+
+        setTimeout(function() {
             $('body').addClass('loaded');
-            setTimeout(function(){
-            $('.is-loading').removeClass('is-loading');
+            setTimeout(function() {
+                $('.is-loading').removeClass('is-loading');
             }, 700);
         }, 2000);
- 
+
     });
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("user_tegE42gemvTHVoUQVZPsq");
+    })();
+    </script>
+    <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Change to your service ID, or keep using the default service
+            var service_id = "default_service";
+            var template_id = "accuracy_fbla_template";
+
+            document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Sending...";
+            emailjs.sendForm(service_id, template_id, this)
+                .then(function() {
+                    alert("Sent!");
+                    document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send";
+                }, function(err) {
+                    alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                    document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send";
+                });
+            return false;
+        });
+    }
     </script>
 </head>
 
@@ -355,32 +384,33 @@
                                 <div class="col-md-12">
                                     <h3>Free Consulting</h3>
                                 </div>
-                                <form class="form-inline form-m">
+                                <form class="form-inline form-m" id="contact-form">
                                     <div class="form-group col-md-6">
                                         <label class="sr-only" for="exampleInputEmail3">Name</label>
-                                        <input type="text" class="form-control" id="" placeholder="Name">
+                                        <input type="text" class="form-control" id="" placeholder="Name" name="Name">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                        <input type="text" class="form-control" id="" placeholder="Designation">
+                                        <input type="text" class="form-control" id="" placeholder="Designation" name="Designation">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                        <input type="email" class="form-control" id="" placeholder="Email">
+                                        <input type="email" class="form-control" id="" placeholder="Email" name="Email">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="sr-only" for="exampleInputEmail3">Company Name</label>
-                                        <input type="text" class="form-control" id="" placeholder="Company Name">
+                                        <input type="text" class="form-control" id="" placeholder="Company Name" name="Company Name">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label class="sr-only" for="exampleInputEmail3">Phone</label>
-                                        <input type="text" class="form-control" id="" placeholder="Phone">
+                                        <input type="text" class="form-control" id="" placeholder="Phone" name="Phone">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <textarea placeholder="Comments" class="form-control" rows="3"></textarea>
+                                        <textarea placeholder="Comments" class="form-control" rows="3" name="Comments"></textarea>
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <input type="submit" class="form-control" placeholder="">
+                                        <!-- <input type="submit" class="form-control" placeholder=""> -->
+                                        <button class="form-control">Send</button>
                                     </div>
                                 </form>
                             </div>
@@ -485,8 +515,8 @@
         <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="Click to return on the top page" style="display: inline;"><span class="glyphicon glyphicon-chevron-up"></span></a>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script>
