@@ -82,7 +82,7 @@
                 }, function(err) {
                     document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Error";
                 });
-            setTimeout(funtcion() { document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send"; }, 10000);
+            setTimeout(function() { document.getElementById('contact-form').getElementsByClassName("form-control")[0].textContent = "Send"; }, 10000);
             setTimeout(function() { document.getElementById('contact-form').reset(); }, 10000);
             return false;
         });
